@@ -36,7 +36,7 @@ public class Split : MonoBehaviour {
 
     public void Fracture(Vector3 position)
     {
-        if (destructable)
+        if (destructable && position != Vector3.zero)
         {
             float x = sr.bounds.size.x / 4;
             float y = sr.bounds.size.y / 4;
